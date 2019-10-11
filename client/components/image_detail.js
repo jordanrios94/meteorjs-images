@@ -8,6 +8,7 @@ const ImageDetail = ({ image }) => (
 
     <div className="media-body">
       <h4 className="media-heading">{image.title}</h4>
+      <p>{image.description}</p>
     </div>
   </li>
 );
