@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageScore from './image_score';
 
 const ImageDetail = ({ image }) => (
   <li className="media list-group-item">
@@ -9,6 +10,7 @@ const ImageDetail = ({ image }) => (
     <div className="media-body">
       <h4 className="media-heading">{image.title}</h4>
       <p>{image.description}</p>
+      <ImageScore ups={image.ups} downs={image.downs} />
     </div>
   </li>
 );
